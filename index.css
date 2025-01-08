@@ -142,7 +142,9 @@ body{
 
 .nav{
     text-decoration: none;
-    margin-left: 31%;
+
+  margin-left: 420px;
+  
 }
 
 .nav li{
@@ -228,16 +230,17 @@ body{
 }
 
 .hire{
-    width: 14%;
+    width: 10%;
     height: 60px;
-    margin-top: 10px;
-    margin-left: 170px;
+    top: 14%;
+    left: 83%;
     border: none;
     background-color: rgb(221, 221, 4);
     border-radius: 40px;
     font-weight: bold;
     color: white;
     box-shadow: -0.5px 0.5px 9px black;
+    position: absolute;
 }
 
 .hire5{
