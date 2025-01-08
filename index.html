@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="index.css">
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4fbba8b045.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <img class="back d-lg-block d-md-none d-sm-none d-none" src="illustration/Back (3).jpg" alt="">
+    <img class="back d-lg-block d-md-block d-sm-none d-none" src="illustration/Back (3).jpg" alt="">
     <img class="back2 d-lg-none d-md-none d-sm-block d-block" src="illustration/Back (2).jpg" alt="">
-    <div class="ttm d-lg-block d-md-none d-sm-none d-none"></div>
+    <div class="ttm d-lg-block d-md-block d-sm-none d-none"></div>
     <div class="ttm2 d-lg-none d-md-none d-sm-block d-block"></div>
 
   
-    <div class="top d-lg-block d-md-none d-sm-none d-none">
+    <div class="top d-lg-block d-md-block d-sm-none d-none">
         
-       <div class="d-lg-block d-md-none d-sm-none d-none" style="width: 100%; position: fixed; background-color: rgb(1, 99, 99); z-index: 20;">
+       <div class="d-lg-block d-md-block d-sm-none d-none" style="width: 100%; position: fixed; background-color: rgb(1, 99, 99); z-index: 20;">
         <ul class="nav ">
             <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Works</li>
-            <li>Contact</li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <button class="hire">Hire me</button>
         </ul>
        </div>
@@ -34,11 +35,11 @@
 
     <div class="d-lg-none d-md-none d-sm-block d-block">
         <div class="pnav" id="pnav">
-            <i class="fa-solid fa-xmark fa-beat" style="margin-left: 270px; font-size: 155%;margin-top: 20px; cursor: pointer;" onclick="ju2(); setTimeout(navc, 1000);"></i>
-            <h1 style="margin-top: 25px;  font-family: 'Roboto';">About</h1>
-            <h1 style="margin-top: 25px;  font-family: 'Roboto';">Skills</h1>
-            <h1 style="margin-top: 25px;  font-family: 'Roboto';">Works</h1>
-            <h1 style="margin-top: 25px;  font-family: 'Roboto';">Contact</h1>
+           
+            <h1 style="margin-top: 25px;  font-family: 'Roboto';"><a href="about.html">About</a></h1>
+            <h1 style="margin-top: 25px;  font-family: 'Roboto';"><a href="skills.html">Skills</a></h1>
+            <h1 style="margin-top: 25px;  font-family: 'Roboto';"><a href="works.html">Works</a></h1>
+            <h1 style="margin-top: 25px;  font-family: 'Roboto';"><a href="contact.html">Contact</a></h1>
             <button class="hire5">Hire me</button>
         </div>
     </div>
@@ -49,30 +50,30 @@
               
             </div>
             <div class="col-sm-6 col-6 d-flex justify-content-end">
-                <i class="fa-solid fa-bars fa-shake" style="font-size: 150%;margin-top: 20px; margin-right: 20px; color: rgb(1, 99, 99); cursor: pointer;" onclick="navo(); setTimeout(ju, 50);"></i>
+                <i class="fa-solid fa-bars fa-shake" style="font-size: 150%;margin-top: 20px; margin-right: 20px; color: rgb(1, 99, 99); cursor: pointer;" onclick="navo();"></i>
             </div>
         </div>
        </div>
 
        
-   <div class="d-lg-none d-md-none d-sm-block d-block">
+   <div class="d-lg-none d-md-none d-sm-block d-block" >
     <p class="name2">Hi, my name is<br>
         <span ><p class="name-mid2">UKPONO<BR>
          UKPE</p></span><br>
          <span style="font-family: sans-serif; font-weight: 50; position: absolute; top: 40%; left: 9%; color: rgb(47, 145, 135); letter-spacing: 0.4ch;">CIVIL ENGINEER</span></p>
    </div>
 
-   <div class="d-lg-block d-md-none d-sm-none d-none">
-    <p class="name">Hey, my name is<br>
+   <div class="d-lg-block d-md-block d-sm-none d-none"  >
+    <p class="name" >Hey, my name is<br>
         <span ><p class="name-mid">UKPONO<BR>
          UKPE</p></span><br>
          <span style="font-family: sans-serif; font-weight: 50; position: absolute; top: 49%; left: 5.7%; color: turquoise; letter-spacing: 0.4ch;">CIVIL ENGINEER</span></p>
    </div>
 
-       <div class="d-lg-block d-md-none d-sm-none d-none">
-        <button class="cv">Download CV</button>
+       <div class="d-lg-block d-md-block d-sm-none d-none">
+        <button class="cv" >Download CV</button>
        </div>
-    <div class="d-lg-block d-md-none d-sm-none d-none ">
+    <div class="d-lg-block d-md-block d-sm-none d-none ">
         <div class="pic d-flex justify-content-center">
             <img src="self/ofipicweb1.png" alt="">
         </div>
@@ -84,7 +85,7 @@
         </div>
     </div>
 
-    <div class="d-lg-block d-md-none d-sm-none d-none">
+    <div class="d-lg-block d-md-block d-sm-none d-none" >
         <div class="others">
             <p  style="margin-left: 5px;">
                 Years of experience
@@ -120,11 +121,11 @@
        
         
         <i class="fa-solid fa-arrow-down fa-bounce" style="font-size: 150%;margin-left: 49.5%; color: rgb(47, 145, 135);margin-top: 20px;"></i>
-        <h3 class="building9">Scroll to continue5</h3>
+        <h3 class="building9">Scroll to continue6</h3>
     </div>
 
-    <div class="d-lg-block d-md-none d-sm-none d-none">
-        <div class="socials">
+    <div class="d-lg-block d-md-block d-sm-none d-none">
+        <div class="socials" data-aos="fade-up">
             <ul>
                 <li><img src="logo/download (2).jpeg" alt=""></li>
                 <li><img style="border-radius: 50%;" src="logo/download (2).png" alt=""></li>
@@ -151,8 +152,8 @@
     </div>
 
    <div class="row ">
-    <div class="col-lg-6">
-        <div class="pic2 d-lg-block d-md-none d-sm-none d-none">
+    <div class="col-lg-6 col-md-6">
+        <div class="pic2 d-lg-block d-md-block d-sm-none d-none">
             <img style="width: 100%; border-radius: 20px;" src="self/mehrax-R8pmbcwl4JA-unsplash.jpg" alt="">
         </div>
         <div class="pic2 d-lg-block d-md-none d-sm-none d-none" style="background-color: rgb(221, 221, 4); z-index: 9; top: 100%;left: 2%; height: 572px;"></div>
@@ -161,7 +162,7 @@
     
 
 
-    <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none">
+    <div class="col-lg-6 col-md-6 d-lg-block d-md-block d-sm-none d-none">
         <h3 class="building"><span class="min">Building solutions,</span><br>
            <span style="font-weight: bolder;"> One project at a time </span>   
             
@@ -183,23 +184,23 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor repellat eum laboriosam, <br>sed quidem mollitia recusandae ratione nihil quae eveniet consequuntur? 
 </p>
 
-<h3 class="skills-tittle d-lg-block d-md-none d-sm-none d-none">What I am awesome at</h3>
+<h3 class="skills-tittle d-lg-block d-md-block d-sm-none d-none">What I am awesome at</h3>
 <h3 class="skills-tittle2 d-lg-none d-md-none d-sm-block d-block" style="line-height: 25px;"><span style="font-weight: bolder; ">What I am<br>awesome at</span></h3>
 <p style="font-size: 110%; margin-top: 10px; color: black; margin-left: 10%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" class="d-lg-block d-md-none d-sm-none d-none">
     Lorem ipsum dolor sit amet consectetur adipisicing elit.
 </p>
-<p style="font-size: 100%; margin-top: 10px; color: black; margin-left: 10%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-right: 10%; text-align: center; font-weight: bolder;" class="d-lg-none d-md-none d-sm-block d-block">
+<p style="font-size: 100%; margin-top: 10px; color: black; margin-left: 10%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-right: 10%; text-align: center; font-weight: bolder;" class="d-lg-none d-md-block d-sm-block d-block">
     Skills I have upper strengths in and really good at.
 </p>
 
-<div class="d-lg-block d-md-none d-sm-none d-none">
+<div class="d-lg-block d-md-block d-sm-none d-none">
     <div class="row " style="margin-top: 60px;">
-        <div class="col-lg-4 d-flex justify-content-end">
+        <div class="col-lg-4 col-md-4 d-flex justify-content-end">
             <div class="row skill1 d">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                     <img style="width: 100%; margin-top: -40px; margin-left: 5px; border-radius: 10px;" src="illustration/manage2.jpeg" alt="">
                    </div>
-                   <div class="col-lg-8" style="font-family: Arial, Helvetica, sans-serif;">
+                   <div class="col-lg-8 col-md-8" style="font-family: Arial, Helvetica, sans-serif;">
                     <p class="skill2" style="margin-left: 5px;">Management</p>
                    <div class="percent">
                     <div class="inner" style="width: 96%;"></div>
@@ -207,24 +208,24 @@
                    </div>
             </div>
         </div>
-        <div class="col-lg-8 " >
+        <div class="col-lg-8 col-md-8" >
             <div class=" row skill1" style="width: 30%;">
-               <div class="col-lg-4">
+               <div class="col-lg-4 col-md-4">
                 <img style="width: 120%; margin-top: -40px; margin-left: 5px; border-radius: 10px;" src="illustration/download (3).jpeg" alt="">
                </div>
-               <div class="col-lg-8" style="font-family: Arial, Helvetica, sans-serif;">
+               <div class="col-lg-8 col-md-8" style="font-family: Arial, Helvetica, sans-serif;">
                 <p class="skill2">Analysis</p>
                <div class="percent">
                 <div class="inner" style="width: 80%;"></div>
                </div><p style="margin-left: 24px; font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(76, 165, 156);">80%</p>
                </div></div>
         </div>
-        <div class="col-lg-4 d-flex justify-content-end">
+        <div class="col-lg-4 col-md-4 d-flex justify-content-end">
             <div class="row skill1" style="margin-top: 40px;">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                     <img style="width: 105%; margin-top: -40px; margin-left: 5px; border-radius: 10px;" src="illustration/toop.jpg" alt="">
                    </div>
-                   <div class="col-lg-8" style="font-family: Arial, Helvetica, sans-serif;">
+                   <div class="col-lg-8 col-md-8" style="font-family: Arial, Helvetica, sans-serif;">
                     <p class="skill2" style="margin-left: -3px;">Communication</p>
                    <div class="percent">
                     <div class="inner" style="width: 78%;"></div>
@@ -232,12 +233,12 @@
                    </div>
             </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 col-md-8 ">
             <div class="row skill1" style="width: 30%;margin-top: 40px;">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                     <img style="width: 120%; margin-top: -40px; margin-left: 5px; border-radius: 10px;" src="illustration/download (3).jpeg" alt="">
                    </div>
-                   <div class="col-lg-8" style="font-family: Arial, Helvetica, sans-serif;">
+                   <div class="col-lg-8 col-md-8" style="font-family: Arial, Helvetica, sans-serif;">
                     <p class="skill2">Technical</p>
                    <div class="percent">
                     <div class="inner" style="width: 90%;"></div>
@@ -313,11 +314,11 @@
 
 
 
-<img class="engineer d-lg-block d-md-none d-sm-none d-none" src="illustration/1sn2s.png" alt="">
+<img class="engineer d-lg-block d-md-block d-sm-none d-none" src="illustration/1sn2s.png" alt="">
 <img class="engineer5 d-lg-none d-md-none d-sm-block d-block" src="illustration/1sn2s.png" alt="">
 
 <div class="row" style="max-width: 100%;">
-    <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none">
+    <div class="col-lg-6 col-md-6 d-lg-block d-md-block d-sm-none d-none">
        <div style="width: 150%;"> <h3 class="projects-tittle"><span style="font-weight: bolder;">Recent projects</span></h3></div>
         <div class="line" style="height: 4.5px;  background-color: rgb(221, 221, 4); width: 12%; border-radius: 20px; margin-top: 15px; margin-left: 60%;"></div>
     </div>
@@ -325,11 +326,11 @@
         <div style="width: 150%;"> <h3 class="projects-tittle5"><span style="font-weight: bolder; ">Recent projects</span></h3></div>
          <div class="line" style="height: 4.5px;  background-color: rgb(221, 221, 4); width: 12%; border-radius: 20px; margin-top: 15px; margin-left: 60%;"></div>
      </div>
-    <div class="col-lg-6 col-sm-3 col-3">
+    <div class="col-lg-6  col-sm-3 col-3">
         <button class="view2 d-lg-none d-md-none d-sm-block d-block">
             View all works
         </button>
-        <button class="view d-lg-block d-md-none d-sm-none d-none">
+        <button class="view d-lg-block d-md-block d-sm-none d-none">
             View all works
         </button>
        
@@ -343,7 +344,7 @@
        
        </div>
     </div>
-    <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none">
+    <div class="col-lg-6 d-lg-block d-md-block d-sm-none d-none">
         <h3 class="projects-tittle2">Escale Tower <br>
         <span class="evry">Leat central</span>
         </h3>
@@ -355,8 +356,8 @@
         </h3>
     </div>
 
-    <div class="col-lg-6"></div>
-    <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none" style="margin-top: 30px;" >
+    <div class="col-lg-6 col-md-6"></div>
+    <div class="col-lg-6 col-md-6 d-lg-block d-md-block d-sm-none d-none" style="margin-top: 30px;" >
         <div onmouseover="hover3()" onmouseout="hover4()" style="width: 90%;  margin-top: 30px;">
          <div class="hover" id="hover1">
              <button class="inhover">View</button>
@@ -366,7 +367,7 @@
         </div>
      </div>
      
-     <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none" >
+     <div class="col-lg-6 col-md-6 d-lg-block d-md-block d-sm-none d-none" >
         <div onmouseover="hover()" onmouseout="hover2()" style="width: 90%;  margin-top: 10px;">
          <div class="hover" id="hover">
              <button class="inhover">View</button>
@@ -415,12 +416,12 @@
     </div>
 
 
-     <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none">
+     <div class="col-lg-6 col-md-6 d-lg-block d-md-block d-sm-none d-none">
         <h3 class="projects-tittle2" style="margin-left: 31%;">East side <br>
         <span class="evry">West wing</span>
         </h3>
     </div>
-    <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none">
+    <div class="col-lg-6 col-md-6 d-lg-block d-md-block d-sm-none d-none">
         <h3 class="projects-tittle2" style="margin-left: 0%; margin-top: -36px;">Diver appartmant <br>
             <span class="evry">London</span>
             </h3>
@@ -429,7 +430,7 @@
 
 
 
-    <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none" style="margin-top: 30px;" >
+    <div class="col-lg-6 col-md-6 d-lg-block d-md-block d-sm-none d-none" style="margin-top: 30px;" >
         <div onmouseover="hover()" onmouseout="hover2()" style="width: 90%;  margin-top: 30px;">
          <div class="hover" id="hover">
              <button class="inhover">View</button>
@@ -457,7 +458,7 @@
 
 
 
-     <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none" >
+     <div class="col-lg-6 col-md-6 d-lg-block d-md-block d-sm-none d-none" >
         <div onmouseover="hover()" onmouseout="hover2()" style="width: 90%;  margin-top: 10px;">
          <div class="hover" id="hover">
              <button class="inhover">View</button>
@@ -484,12 +485,12 @@
         </h3>
     </div>
 
-     <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none">
+     <div class="col-lg-6  col-md-6 d-lg-block d-md-block d-sm-none d-none">
         <h3 class="projects-tittle2" style="margin-left: 31%;">East side <br>
         <span class="evry">West wing</span>
         </h3>
     </div>
-    <div class="col-lg-6 d-lg-block d-md-none d-sm-none d-none">
+    <div class="col-lg-6 col-md-6 d-lg-block d-md-block d-sm-none d-none">
         <h3 class="projects-tittle2" style="margin-left: 0%; margin-top: -36px;">Diver appartmant <br>
             <span class="evry">London</span>
             </h3>
@@ -505,7 +506,7 @@
 
 
 
-<h1 style="margin-left: 0%; margin-top: 60px; color: rgb(1, 99, 99); font-size: 180%; font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-align: center; "><span style="font-weight: bolder;" class="d-lg-none d-md-none d-sm-block d-block">What my<br>clients say</span></h1><br>
+<h1 style="margin-left: 0%; margin-top: 60px; color: rgb(1, 99, 99); font-size: 180%; font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-align: center; "><span style="font-weight: bolder;" class="d-lg-none d-md-block d-sm-block d-block">What my<br>clients say</span></h1><br>
 
 
 <h1 style="margin-left: 20%; margin-top: 60px; color: rgb(1, 99, 99); font-size: 270%; font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; " class="d-lg-block d-md-none d-sm-none d-none"><span style="font-weight: bolder;">What my clients say</span></h1><br>
@@ -513,41 +514,41 @@
 
 
 
-<div class="line d-lg-block d-md-none d-sm-none d-none" style="height: 4.5px;  background-color: rgb(221, 221, 4); width: 7%; border-radius: 20px; margin-top: -20px; margin-left: 20%;"></div>
+<div class="line d-lg-block d-md-block d-sm-none d-none" style="height: 4.5px;  background-color: rgb(221, 221, 4); width: 7%; border-radius: 20px; margin-top: -20px; margin-left: 20%;"></div>
 
 <div class="line d-lg-none d-md-none d-sm-block d-block" style="height: 4.5px;  background-color: rgb(221, 221, 4); width: 7%; border-radius: 20px; margin-top: -36px; margin-left: 48%;"></div>
 
 <div class="quote-container d-lg-block d-md-none d-sm-none d-none">
     <div class="quotes">
         <div class="row quote">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <img style="height: 70px; border-radius: 50px; margin-top: 7px;" src="Faces/face1.png" alt="">
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-md-8">
                 <p class="peo"><span style="color: rgb(221, 221, 4); font-size: 170%;">"</span><br>I had one of the most wonderful treatment<br><span style="color: rgb(221, 221, 4); font-size: 170%; line-height: 40px;">"</span></p>
             </div>
         </div>
         <div class="row quote">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <img style="height: 70px; border-radius: 50px; margin-top: 7px;" src="Faces/download (1).jpg" alt="">
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-md-8">
                 <p class="peo"><span style="color: rgb(221, 221, 4); font-size: 170%;">"</span><br>Quantity and quality at peak,perfect<br><span style="color: rgb(221, 221, 4); font-size: 170%; line-height: 40px;">"</span></p>
             </div>
         </div>
         <div class="row quote">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-8">
                 <img style="height: 66px; border-radius: 50px; margin-top: 9px;" src="Faces/OIP (1).jpg" alt="">
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-md-8">
                 <p class="peo"><span style="color: rgb(221, 221, 4); font-size: 170%;">"</span><br>I had one of the most wonderful treatment<br><span style="color: rgb(221, 221, 4); font-size: 170%; line-height: 40px;">"</span></p>
             </div>
         </div>
         <div class="row quote">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <img style="height: 70px; border-radius: 60px; margin-top: 7px;" src="Faces/ofipic1 (2).jpg" alt="">
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 ">
                 <p class="peo"><span style="color: rgb(221, 221, 4); font-size: 170%;">"</span><br>I had one of the most wonderful treatment<br><span style="color: rgb(221, 221, 4); font-size: 170%; line-height: 40px;">"</span></p>
             </div>
         </div>
@@ -555,39 +556,39 @@
     
 </div>
 
-<div class="quote-container2 d-lg-none d-md-none d-sm-block d-block">
+<div class="quote-container2 d-lg-none d-md-blockd-sm-block d-block">
     <div class="quotes3">
         <div class="row quote4">
-            <div class="col-lg-4 col-sm-4 col-4">
+            <div class="col-lg-4 col-sm-4 col-4 col-md-4">
                 <img style="height: 40px; border-radius: 50px; margin-top: 10px; margin-left: -3px;" src="Faces/face1.png" alt="">
             </div>
-            <div class="col-lg-8 col-sm-8 col-8">
+            <div class="col-lg-8 col-sm-8 col-8 col-md-8">
                 <p class="peo2"><span style="color: rgb(221, 221, 4); font-size: 60%;">"</span><br>I had one of the most wonderful treatment<br><span style="color: rgb(221, 221, 4); font-size: 60%; line-height: 10px;">"</span></p>
             </div>
         </div>
 
         
         <div class="row quote4">
-            <div class="col-lg-4 col-sm-4 col-4">
+            <div class="col-lg-4 col-sm-4 col-4 col-md-4">
                 <img style="height: 40px; border-radius: 50px; margin-top: 10px;" src="Faces/download (1).jpg" alt="">
             </div>
-            <div class="col-lg-8 col-sm-8 col-8">
+            <div class="col-lg-8 col-sm-8 col-8 col-md-8">
                 <p class="peo2"><span style="color: rgb(221, 221, 4); font-size: 60%;">"</span><br>Quantity and quality at peak,perfect<br><span style="color: rgb(221, 221, 4); font-size: 60%; line-height: 10px;">"</span></p>
             </div>
         </div>
         <div class="row quote4">
-            <div class="col-lg-4 col-sm-4 col-4">
+            <div class="col-lg-4 col-sm-4 col-4 col-md-4">
                 <img style="height: 40px; border-radius: 50px; margin-top: 10px;" src="Faces/OIP (1).jpg" alt="">
             </div>
-            <div class="col-lg-8 col-sm-8 col-8">
+            <div class="col-lg-8 col-sm-8 col-8 col-md-8">
                 <p class="peo2"><span style="color: rgb(221, 221, 4); font-size: 60%;">"</span><br>I had one of the most wonderful treatment<br><span style="color: rgb(221, 221, 4); font-size: 60%; line-height: 10px;">"</span></p>
             </div>
         </div>
         <div class="row quote4">
-            <div class="col-lg-4 col-sm-4 col-4">
+            <div class="col-lg-4 col-sm-4 col-4 col-md-4">
                 <img style="height: 40px; border-radius: 60px; margin-top: 10px;" src="Faces/ofipic1 (2).jpg" alt="">
             </div>
-            <div class="col-lg-8 col-sm-8 col-8">
+            <div class="col-lg-8 col-sm-8 col-8 col-md-8">
                 <p class="peo2"><span style="color: rgb(221, 221, 4); font-size: 60%;">"</span><br>I had one of the most wonderful treatment<br><span style="color: rgb(221, 221, 4); font-size: 60%; line-height: 10px;">"</span></p>
             </div>
         </div>
@@ -595,35 +596,35 @@
     
 </div>
 
-<div class="d-lg-block d-md-none d-sm-none d-none">
+<div class="d-lg-block d-md-block d-sm-none d-none">
     <div class="row contact ">
         <div style="width: 100%; margin-top: 40px;">
          <h3 style="font-size: 150%; font-weight: bolder; color: rgb(221, 221, 4) ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">Contact me <br> <span style="color: rgb(1, 99, 99); font-size: 200%; font-weight: bolder; text-align: center;">Have a Project?</span></h3></div>
          
-        <div class="col-lg-12" style="margin-top: 15px;">
+        <div class="col-lg-12 col-md-12" style="margin-top: 15px;">
         
      
      
          <div class="contactdiv" style="margin-left: 23%;" >
              
                
-                   <div class="col-lg-12 d-flex justify-content-center">
+                   <div class="col-lg-12 col-md-12 d-flex justify-content-center">
                      <div class="hungry d-flex justify-content-center align-items-center">
                        <i  style="color: white; font-size: 150%;" class="fa-solid fa-phone"></i>
                      </div>
                    </div>
-                   <div class="col-lg-12 d-flex align-items-center"><h5 style="text-align: center; margin-left: 42px; margin-top: 20px; font-family:'Roboto' ;"><span style="text-align: center; font-weight: bolder;font-family: sans-serif;"> Phone:</span><br>+2347064539263</h5></div>
+                   <div class="col-lg-12 col-md-12 d-flex align-items-center"><h5 style="text-align: center; margin-left: 42px; margin-top: 20px; font-family:'Roboto' ;"><span style="text-align: center; font-weight: bolder;font-family: sans-serif;"> Phone:</span><br>+2347064539263</h5></div>
                  
                
          </div>
  
          <div class="contactdiv" style=" margin-top: 10px;">
-             <div class="col-lg-12 d-flex justify-content-center ">
+             <div class="col-lg-12 col-md-12 d-flex justify-content-center ">
                <div class="hungry d-flex justify-content-center align-items-center">
                  <i style="color: white; font-size: 150%;" class="fa-solid fa-location-dot "></i>
                </div>
              </div>
-             <div class="col-lg-12 d-flex align-items-center"><h5 style="text-align: center; margin-left: 30px; margin-top: 20px; font-family:'Roboto' ;"><span style="text-align: center; font-weight: bolder;font-family: sans-serif;"> Adress:</span><br>22 Kent street, Lagos</h5></div>
+             <div class="col-lg-12 col-md-12 d-flex align-items-center"><h5 style="text-align: center; margin-left: 30px; margin-top: 20px; font-family:'Roboto' ;"><span style="text-align: center; font-weight: bolder;font-family: sans-serif;"> Adress:</span><br>22 Kent street, Lagos</h5></div>
          
          
    </div>
@@ -631,12 +632,12 @@
      
          <div class="contactdiv">
             
-                   <div class="col-lg-12 d-flex justify-content-center">
+                   <div class="col-lg-12 col-md-12 d-flex justify-content-center">
                      <div class="hungry d-flex justify-content-center align-items-center">
                        <i style="color: white; font-size: 150%;" class="fa-solid fa-envelope"></i>
                      </div>
                    </div>
-                   <div class="col-lg-12 d-flex align-items-center"><h5 style="text-align: center; margin-left: 23px; margin-top: 20px; font-family:'Roboto' ;"><span style="text-align: center; font-weight: bolder;font-family: sans-serif;"> Email:</span><br>ofinaboy1@gmail.com</h5></div>
+                   <div class="col-lg-12 col-md-12 d-flex align-items-center"><h5 style="text-align: center; margin-left: 23px; margin-top: 20px; font-family:'Roboto' ;"><span style="text-align: center; font-weight: bolder;font-family: sans-serif;"> Email:</span><br>ofinaboy1@gmail.com</h5></div>
                 
          </div>
         </div>
@@ -647,25 +648,25 @@
              </p>
      
          </div>
-     <div class="d-flex justify-content-end d-none d-sm-none d-md-none d-lg-block">
+     <div class="d-flex justify-content-end d-none d-sm-none d-md-block d-lg-block">
          <div  class="row  " data-aos="fade-up">
-           <div class="col-lg-12">
+           <div class="col-lg-12 col-md-12">
              <div class="vrt">
              <form  action="https://formspree.io/f/xoqoyopp" method="POST">
                <div class="row" style="margin-top:7px;">
-                 <div class="col-lg-6 d-flex justify-content-end">
+                 <div class="col-lg-6 col-md-6 d-flex justify-content-end">
                   <input id="name" name="name" class="wew" type="text" placeholder="Your name" required>
                  </div>
-                 <div class="col-lg-6">
+                 <div class="col-lg-6 col-md-6">
                   <input name="email" id="email" class="wew" type="text" placeholder="Your Email" required>
                  </div>
-                 <div class="col-lg-12 d-flex justify-content-center">
+                 <div class="col-lg-12 col-md-12 d-flex justify-content-center">
                   <input name="subject" style="height: 50px; width: 70%; margin-top: 20px; border-radius: 8px;   border: 2px solid rgba(221, 221, 4, 0.685) ;" type="text" placeholder="Subject" required>
                  </div>
-                 <div class="col-lg-12 d-flex justify-content-center">
+                 <div class="col-lg-12 col-md-12 d-flex justify-content-center">
                   <input name="message" id="message" class="wewr" style="height: 150px; width: 70%; margin-top: 20px; border-radius: 8px;   border: 2px solid rgba(221, 221, 4, 0.685) ;" row="10" type="text" placeholder="Message"  required>
                  </div>
-                 <div class="col-lg-12">
+                 <div class="col-lg-12 col-md-12">
                    <button id="buteen"  style="padding: 17px; border-radius: 7px; margin-left: 32.5%; border: none; color:  white;  background-color: rgb(221, 221, 4);  font-family: 'Gilroy-Bold ☞'; width: 35%; margin-top: 25px; " onmouseover="overbut3()"
                    onmouseout="overbut4()"><h5>Send</h5></button>
                  </div>
@@ -772,7 +773,10 @@
 
 
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 <script>
     function hover(){
         document.getElementById('hover').style.opacity='100%';
@@ -815,7 +819,19 @@
 
    const nav=document.getElementById('pnav');
    function navo(){
-    nav.style.display='block';
+    if(nav.style.display==='none'||nav.style.display===''){
+        nav.style.display='block';
+        setTimeout(ju,50);
+    }
+    else if(nav.style.display==='block'){
+        ju2(); 
+        setTimeout(navc, 1000);
+    }
+    else{
+        ju2(); 
+        setTimeout(navc, 1000);
+    }
+    
     
    }
    function ju(){
@@ -829,6 +845,22 @@
    function ju2(){
     nav.style.opacity='0%';
    }
+
+
+
+   const navbar = document.querySelector('.top5');
+
+
+window.addEventListener('scroll', () => {
+   
+    if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+    } else {
+        
+        navbar.classList.remove('navbar-scrolled');
+    }
+});
 </script>
+
 </body>
 </html>
