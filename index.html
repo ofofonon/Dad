@@ -771,10 +771,36 @@
     </div>
 </div>
 
+<div class="loader d-flex justify-content-center align-items-center" id="load">
+      
+    <div class="mr">
+      
+    </div>
+    <div class="fr">
+       
+    </div>
+    <h2 class="d-lg-none d-md-none d-sm-block d-block" style="color: white; position: absolute; top: 48%; left: 40%; font-weight: bolder;"><span style="font-weight: bolder;">Ukpe</span></h2>
+    <h2 class="d-lg-block d-md-block d-sm-none d-none" style="color: white; position: absolute; top: 48%; left: 46.7%; font-weight: bolder;"><span style="font-weight: bolder;">Ukpe</span></h2>
+  </div>
+
 
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
+    window.addEventListener("load", () =>{
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitioned", () =>{
+        document.body.replaceChild("loader");
+    })
+})
+
+
+
+
+
     AOS.init();
   </script>
 <script>

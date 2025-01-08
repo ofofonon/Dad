@@ -810,3 +810,71 @@ input[type='text']{
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.106), 0 3px 20px 0 rgba(0, 0, 0, 0.106);
 }
 
+
+
+
+
+
+.loader{
+    display: block;
+    background-color: rgb(1, 99, 99);
+    width: 100%;
+    height: 700px;
+    z-index: 35;
+    position: fixed;
+    top: 0;
+    transition: opacity 6s, visibility 5s;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+.loader::after{
+    content: "";
+   
+  }
+
+.mr{
+    width: 135px;
+    height: 135px;
+    background-color: transparent;
+    border: 19px solid  rgb(221, 221, 4);
+    position: absolute;
+   animation-name: turn;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    border-radius: 50px;
+
+}
+
+.fr{
+    width: 135px;
+    height: 135px;
+    background-color: transparent;
+    border-radius: 50px;
+    border:white solid 15px;
+    animation-name: turn2;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;  
+}
+
+@keyframes turn{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(180deg);}
+}
+
+@keyframes turn2{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-360deg);}
+}
+@keyframes loading{
+    from{
+      transform: rotate(0turn)
+    }
+    to{
+      transform: rotate(1turn)
+    }
+  }
+
