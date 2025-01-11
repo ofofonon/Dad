@@ -61,7 +61,7 @@ body{
     top: 161%;
     width: 100%;
     height: 438px;
-    background-image: linear-gradient(to bottom , white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),white);
+    background-image: linear-gradient(to bottom , white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
     
 }
 
@@ -172,9 +172,9 @@ body{
 
 .name2{
     line-height: 30px; 
-   margin-top: 40px;
+   margin-top: 110px;
   font-family: 'Roboto';
-    margin-left: 8%;
+    margin-left: 8.3%;
    color: rgb(47, 145, 135);
    font-size: 175%;
 }
@@ -270,10 +270,10 @@ body{
 }
 
 .hire4{
-    width: 21%;
+    width: 27%;
     height: 40px;
     margin-top: 16px;
-    margin-left: 39.5%;
+    margin-left: 36.5%;
     border: none;
     background-color: rgb(221, 221, 4);
     border-radius: 20px;
@@ -282,6 +282,11 @@ body{
     color: white;
    
 }
+
+.hire4:hover{
+    opacity: 80%;
+}
+
 
 .socials{
     margin-left: 36%;
@@ -428,6 +433,31 @@ body{
     position: absolute;
     top: 260%;
     left: 63%;
+    animation-name: engine;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;  
+}
+
+.engineer25{
+    width: 35%;
+    position: absolute;
+    top: 16%;
+    left: 63%;
+    animation-name: engine5;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s; 
+}
+
+@keyframes engine{
+    0%{ top: 260%;}
+    50%{top: 256%;}
+    100%{top: 260%;}
+}
+
+@keyframes engine5{
+    0%{ top: 16%;}
+    50%{top: 18.5%;}
+    100%{top: 16%;}
 }
 
 .engineer5{
@@ -435,6 +465,29 @@ body{
     position: absolute;
     top: 288%;
     left: 10%;
+    animation-name: engine6;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s; 
+}
+@keyframes engine6{
+    0%{ top: 288%;}
+    50%{top: 290%;}
+    100%{top: 288%;}
+}
+
+.engineer10{
+    width: 80%;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    animation-name: engine7;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s; 
+}
+@keyframes engine7{
+    0%{ top: 70%;}
+    50%{top: 73%;}
+    100%{top: 70%;}
 }
 
 .skill2{
@@ -681,6 +734,7 @@ body{
 .contact{
     background-color: rgba(4, 250, 225, 0.185);
     margin-top: 70px;
+    padding-bottom: 120px;
 }
 
 .contactdiv{
@@ -693,6 +747,7 @@ body{
    display: flex;
   display: inline-block;
   margin: 9px;
+ 
 }
 
 .contactdiv2{
@@ -714,12 +769,12 @@ input[type='text']{
     padding-left: 15px;
     font-family: 'Roboto';
     font-weight: bold;
-    color: rgba(64, 224, 208, 0.199);
+    color: rgb(1, 99, 99);
 }
 
 .wewr[type='text']{
   padding-left: 15px;
-  color: rgba(64, 224, 208, 0.199);
+  color: rgb(1, 99, 99);
 }
 
 .nav a{
@@ -732,8 +787,8 @@ input[type='text']{
     width: 70%;
     border-radius: 10px;
     padding: 15px;
-    margin-left: 28%;
-    color: rgba(64, 224, 208, 0.199);
+    margin-left: 32%;
+    color: rgb(1, 99, 99);
 }
 
 .vrt2{
@@ -750,7 +805,7 @@ input[type='text']{
     height: 50px;
     border: 2px solid rgb(221, 221, 4) ;
     border-radius: 8px;
-    color: rgba(64, 224, 208, 0.199);
+    color: rgb(1, 99, 99);
 }
 
 .wew2{
@@ -758,7 +813,7 @@ input[type='text']{
     height: 40px;
     border: 1px solid rgb(221, 221, 4) ;
     border-radius: 8px;
-    color: rgba(64, 224, 208, 0.199);
+    color: rgb(1, 99, 99);
     margin-top: 10px;
 }
 
@@ -863,6 +918,32 @@ input[type='text']{
     animation-duration: 1.5s;  
 }
 
+
+
+.mp{
+    width: 105px;
+    height: 105px;
+    background-color: transparent;
+    border: 19px solid  rgb(1, 99, 99);
+    position: absolute;
+   animation-name: turn;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    border-radius: 40px;
+
+}
+
+.fp{
+    width: 105px;
+    height: 105px;
+    background-color: transparent;
+    border-radius: 40px;
+    border:white solid 15px;
+    animation-name: turn2;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;  
+}
+
 @keyframes turn{
     from{transform: rotate(0deg);}
     to{transform: rotate(180deg);}
@@ -880,4 +961,93 @@ input[type='text']{
       transform: rotate(1turn)
     }
   }
+
+
+
+
+
+  .footer{
+    background-color: rgb(221, 221, 4);
+    height: 400px;
+    width: 100%;
+    
+}
+
+.fot{
+   
+    text-align: center;
+    color: white;
+    padding-top: 88px; 
+}
+
+
+
+.fotli{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.fot2li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 80%;
+    font-weight: bolder;
+}
+.vb{
+    text-align: center;
+}
+
+.fotli a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.fot2li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.jju{
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.fotli2{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.fotli2 a{
+    color: rgb(1, 99, 99);
+   font-size: 110%;
+    text-decoration: none;
+    
+}
+.jju:hover{
+    color: white;
+    background-color: rgb(221, 221, 4);
+    transition: 0.2s;
+}
+
+.copi{
+    text-align: center;
+    font-family: 'Roboto';
+    color: rgb(233, 231, 231);
+
+}
+
+.copi2{
+    text-align: center;
+    font-family: 'Gilroy-Medium ☞';
+    color: rgb(233, 231, 231);
+    font-size: 50%;
+    
+}
 
