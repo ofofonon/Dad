@@ -94,7 +94,7 @@
        
         <p class="about1" style="margin-top: 50px;">Let's talk with me</p>
         <h3 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">ukponoukpe@gmail.com</h3>
-        <a href="contact.html"><button class="hire2">contact</button></a>
+       <button class="hire2" onmousedown="makePayment()">pay</button>
     </div>
    </div>
   
@@ -306,6 +306,40 @@
 
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://checkout.flutterwave.com/v3.js"></script>
+<script>
+    function makePayment() {
+    let amount = 5000;
+    
+    
+    if (amount <= 0 || isNaN(amount)) {
+        alert("Please enter a valid amount");
+        return;
+    }
+
+    // Flutterwave Inline Checkout
+    FlutterwaveCheckout({
+        public_key: "FLWPUBK-fbc22cef3bd266be8cf8fc4880642ec1-X", // Replace with your actual Public Key
+        tx_ref: "TX-" +  new Date().getTime(),  // Unique transaction reference
+        amount: amount,  // Dynamically passed amount
+        currency: "NGN",  // Change if needed (USD, GHS, KES, etc.)
+        payment_options: "card, ussd, banktransfer",
+        customer: {
+            email: "customer@example.com",
+            phone_number: "08012345678",
+            name: "John Doe"
+        },
+        callback: function (data) { // Runs after payment
+            console.log("Payment successful:", data);
+            alert("Payment successful! Transaction ID: " + data.transaction_id);
+        },
+        onclose: function() {
+            alert("Payment window closed.");
+        }
+    });
+}
+
+</script>
 
 <script>
      window.addEventListener("load", () =>{
